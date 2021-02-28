@@ -6,11 +6,10 @@ public class Post {
     private String text;
     private int replyOwnerId;
     private int replyPostId;
-    private boolean likesInfo;
-    private boolean commentsInfo;
-    private boolean repost;
-    private boolean viewsInfo;
-    private boolean friendsOnly;
+    private LikesInfo likesInfo;
+    private CommentsInfo commentsInfo;
+    private RepostsInfo repostInfo;
+    private ViewsInfo viewsInfo;
 
     public int getId () {
         return id;
@@ -52,43 +51,35 @@ public class Post {
         this.replyPostId = replyPostId;
     }
 
-    public boolean isLikesInfo () {
+    public LikesInfo getLikesInfo () {
         return likesInfo;
     }
 
-    public void setLikesInfo ( boolean likesInfo ) {
+    public void setLikesInfo ( LikesInfo likesInfo ) {
         this.likesInfo = likesInfo;
     }
 
-    public boolean isCommentsInfo () {
+    public CommentsInfo getCommentsInfo () {
         return commentsInfo;
     }
 
-    public void setCommentsInfo ( boolean commentsInfo ) {
+    public void setCommentsInfo ( CommentsInfo commentsInfo ) {
         this.commentsInfo = commentsInfo;
     }
 
-    public boolean isRepost () {
-        return repost;
+    public RepostsInfo getRepostInfo () {
+        return repostInfo;
     }
 
-    public void setRepost ( boolean repost ) {
-        this.repost = repost;
+    public void setRepostInfo ( RepostsInfo repostInfo ) {
+        this.repostInfo = repostInfo;
     }
 
-    public boolean isViewsInfo () {
+    public ViewsInfo getViewsInfo () {
         return viewsInfo;
     }
 
-    public void setViewsInfo ( boolean viewsInfo ) {
+    public void setViewsInfo ( ViewsInfo viewsInfo ) {
         this.viewsInfo = viewsInfo;
-    }
-
-    public boolean isFriendsOnly () {
-        return friendsOnly;
-    }
-
-    public void setFriendsOnly ( boolean friendsOnly ) {
-        this.friendsOnly = friendsOnly;
     }
 }
